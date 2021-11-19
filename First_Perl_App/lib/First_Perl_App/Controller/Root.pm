@@ -34,7 +34,13 @@ sub index :Path :Args(0) {
     # $c->response->body( $c->welcome_message );
     print $c->response->headers();
     $c->response->body("<head>
-    <title>My App</title></head>
+    <title>My App</title>
+    <style> div{
+        padding-top: 20rem;
+        text-align:center;
+        color:red;
+        font-size:50px;
+    } </style> </head>
     <body>
     <div>This is my first perl program</div>
     </body>");

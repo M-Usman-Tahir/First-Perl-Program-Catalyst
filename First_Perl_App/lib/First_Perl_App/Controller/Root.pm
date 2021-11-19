@@ -30,10 +30,15 @@ The root page (/)
 
 sub index :Path :Args(0) {
     my ( $self, $c ) = @_;
-
     # Hello World
-    $c->response->body( $c->welcome_message );
+    # $c->response->body( $c->welcome_message );
+    print $c->response->headers();
+    $c->response->body("
+    <body>
+    <div>This is my first perl program</div>
+    </body>");
 }
+
 
 =head2 default
 

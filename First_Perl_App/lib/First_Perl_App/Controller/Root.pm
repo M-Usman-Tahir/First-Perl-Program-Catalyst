@@ -33,7 +33,8 @@ sub index :Path :Args(0) {
     # Hello World
     # $c->response->body( $c->welcome_message );
     print $c->response->headers();
-    $c->response->body("
+    $c->response->body("<head>
+    <title>My App</title></head>
     <body>
     <div>This is my first perl program</div>
     </body>");

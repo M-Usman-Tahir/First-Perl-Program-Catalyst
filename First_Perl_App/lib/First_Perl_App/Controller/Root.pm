@@ -35,11 +35,13 @@ sub index :Path :Args(0) {
     print $c->response->headers();
     $c->response->body("<head>
     <title>My App</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sofia'/>
     <style> div{
         padding-top: 20rem;
         text-align:center;
         color:red;
         font-size:50px;
+        font-family:'Sofia', sans-serif;
     } </style> </head>
     <body>
     <div>This is my first perl program</div>
